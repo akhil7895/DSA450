@@ -1,6 +1,7 @@
 // nCr
 public class Solution3 {
     //Naive Approach
+    //TC :- O(n)  SC :- O(1)
     public static int nCr(int n ,int r){
         if(r>n) return 0;
         if(n==r || r==0) return 1;
@@ -20,8 +21,10 @@ public class Solution3 {
         }
         return res;
     }
+    
 
     //Binomial Cofficient Formula
+    //TC :- O(r)  SC :- O(1)
     public static int nCr3(int n ,int r){
         double sum = 1;
         for(int i=1;i<=r;i++){
